@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearEmpleados"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:background="@drawable/fondo2">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="CREAR EMPLEADO"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tipo de identificación"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerTipoID"
+            android:layout_width="170dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Nombres"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextNombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textNoSuggestions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Apellidos"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textNoSuggestions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Teléfono"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:ems="6"
+            android:inputType="number"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Dirección"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textNoSuggestions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Correo"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:ems="6"
+            android:inputType="textEmailAddress"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Empresa"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerIDEmpresa"
+            android:layout_width="170dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:weightSum="4">
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cargo"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCargo"
+            android:layout_width="170dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Salario"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextSalario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:ems="6"
+            android:inputType="number"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/borde_redondo"
+            android:onClick="volverEmpleado"
+            android:text="REGRESAR" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/borde_redondo"
+            android:onClick="CREMPLEADO"
+            android:text="CREAR" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/borde_redondo"
+            android:onClick="volverInicio"
+            android:text="INICIO" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarEmpresas"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2"
+    android:weightSum="12">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="EDITAR EMPRESA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/TextViewEditarEmpresas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Empresa"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+        <Spinner
+            android:id="@+id/spinnerEditarEmpresas"
+            android:layout_width="170dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/borde_redondo"
+            android:onClick="mostrarDatosEmpresa"
+            android:text="MOSTRAR" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Nit"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextNitEDITAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textNoSuggestions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tipo Empresa"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerTipoEmpresaEDITAR"
+            android:layout_width="160dp"
+            android:layout_height="53dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Nombre"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextNombreEDITAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textNoSuggestions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Telefono"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextTelefonoEmpresaEDITAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:ems="6"
+            android:inputType="number"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Direccion"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextDireccionEmpresaEDITAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textNoSuggestions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Correo"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EditTextCorreoEmpresaEDITAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="6"
+            android:inputType="textNoSuggestions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="14sp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/borde_redondo"
+            android:onClick="volverEmpresa"
+            android:text="REGRESAR" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/borde_redondo"
+            android:onClick="EEREMPRESA"
+            android:text="EDITAR" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/borde_redondo"
+            android:onClick="volverInicio"
+            android:text="INICIO" />
+
+    </LinearLayout>
+
+</LinearLayout>
